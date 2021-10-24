@@ -4,7 +4,8 @@ import { BrowserRouter as Router,
   Route,
   Link } from 'react-router-dom';
 import './App.css';
-import HomePage from './pages/homepage.component';
+import HomePage from './pages/homepage/homepage.component';
+import ShopPage from './pages/shop/shop.component';
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
       <Switch>
         <Route exact path='/'>
           <HomePage />
+        </Route>
+        <Route exact path='/shop'>
+          <ShopPage />
         </Route>
       </Switch>
     </Router>
